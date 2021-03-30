@@ -1,0 +1,163 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.navbar{
+    height: 100%; /* altura al 100% de la pagina */
+    width: 20%; /* ancho de la barra*/
+    position: fixed; /* es para fijar la barra lateral y no se mueva con la ruedita*/
+    z-index: 1; /* mantener arriba*/
+    top: 0; /* mantener arriba */
+    left: 0;
+    background-color: #616161;
+    overflow-x: hidden; /* desactivo el scroll horizontal */
+    padding-top: 20px;
+    line-height: 0.9cm;
+}
+
+.navbar a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #ffffff;
+    display: block;
+  }
+.navbar a:hover{
+    color:#0C59F7;
+    font-size: 35px;
+    background: blanchedalmond;
+    border-radius: 30px;
+    animation: image-generated 1s linear;
+}
+
+.iconodog{
+    height: 3cm;
+    padding-left: 2cm;
+    padding-top: 0;
+    box-sizing: border-box;
+}
+
+@keyframes image-generated
+{
+    0% {
+      opacity: 0%;
+    }
+    100% {
+      opacity: 100%;
+    }
+    0%{
+        opacity: 0%;
+    }     
+  }
+
+.principal {
+    margin-left: 20%; /* Same as the width of the sidebar */
+    margin-top: 0;
+    padding: 0px 0px;
+    height: 100%;
+    display: grid;
+    top: 0;
+    z-index: 1;
+
+
+    
+}
+
+.gato1{
+    height: 186px;
+    width: 250px;
+    padding-top: 0;
+    float: left ;
+    padding-bottom: 0;
+    border-radius:30px ;
+    object-fit: cover;
+    vertical-align: middle;
+    box-sizing: border-box;
+
+}
+h1, p{
+    margin-left: 300px;
+    text-align: left;
+}
+
+.t1 , .t2 , .t3 , .t4 {
+    padding-left: 20px;
+    padding-right: 160px;
+    color: #ffffff;
+
+}
+.t1{
+    background-color: #0C59F7;
+    height: 6cm;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+.principal a{
+    color: white;
+    text-decoration: none;
+    border-radius: 15px ;
+    background-color: #616161;
+    font-size: 30px;
+    float: right;
+    padding: 6px 8px 6px 16px;
+
+}
+.principal a:hover{
+    font-size: 40px;
+
+}
+.t2{
+    background-color: #017FE0 ;
+    height: 6cm;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+.t3{
+    background-color: #0CB9F7;
+    height: 6cm;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+.t4{
+    background-color: #00F0E3;
+    height: 6cm;
+    padding-top: 20px;
+    padding-bottom: 20px;   
+    text-align: center;
+}
+
+.parpadea {
+  
+    animation-name: parpadeo;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  
+    -webkit-animation-name:parpadeo;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+  }
+  
+  @-moz-keyframes parpadeo{  
+    0% { opacity: 1.0; }
+    50% { opacity: 0.0; }
+    100% { opacity: 1.0; }
+  }
+  
+  @-webkit-keyframes parpadeo {  
+    0% { opacity: 1.0; }
+    50% { opacity: 0.0; }
+     100% { opacity: 1.0; }
+  }
+  
+  @keyframes parpadeo {  
+    0% { opacity: 1.0; }
+     50% { opacity: 0.0; }
+    100% { opacity: 1.0; }
+  }
